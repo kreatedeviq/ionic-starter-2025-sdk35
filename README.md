@@ -35,7 +35,7 @@ bash
 Copy
 Edit
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kreateApp.git
+git clone https://github.com/kreatedeviq/ionic-starter-2025-sdk35.git
 cd kreateApp
 
 # Install dependencies
