@@ -1,0 +1,160 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* RTL Support */
+@import "assets/rtl.scss";
+
+:root {
+  --ion-font-family: 'Cairo', sans-serif;
+  
+  /* RTL specific variables */
+  --ion-padding-start: 16px;
+  --ion-padding-end: 16px;
+  --ion-margin-start: 16px;
+  --ion-margin-end: 16px;
+}
+
+/* Global styles */
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+// Hero Section Styles
+.hero-section {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--ion-color-primary);
+  margin-bottom: 10px;
+}
+
+.app-description {
+  font-size: 16px;
+  color: var(--ion-color-medium);
+}
+
+// Login/Register Styles
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-container ion-icon {
+  font-size: 80px;
+  color: var(--ion-color-primary);
+  margin-bottom: 20px;
+}
+
+.form-buttons {
+  margin-top: 30px;
+}
+
+.validation-error {
+  color: var(--ion-color-danger);
+  padding-right: 16px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+// Profile Styles
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--ion-color-light);
+  margin-bottom: 20px;
+}
+
+.profile-avatar ion-avatar {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ion-color-light);
+}
+
+.profile-avatar ion-icon {
+  font-size: 48px;
+  color: var(--ion-color-medium);
+}
+
+.profile-info {
+  margin-right: 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-info p {
+  margin: 5px 0 15px 0;
+  color: var(--ion-color-medium);
+}
+
+// Search Page Styles
+.initial-state, .no-results, .loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.initial-state ion-icon, .no-results ion-icon {
+  font-size: 64px;
+  color: var(--ion-color-medium);
+  margin-bottom: 20px;
+}
+
+.popular-searches {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.popular-searches ion-chip {
+  margin: 5px;
+}
+
+.loading-container {
+  min-height: 200px;
+}
+
+.loading-container ion-spinner {
+  margin-bottom: 20px;
+}

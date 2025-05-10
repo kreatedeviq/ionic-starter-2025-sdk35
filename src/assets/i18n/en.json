@@ -1,0 +1,35 @@
+{
+  "APP": {
+    "TITLE": "Kreate App",
+    "WELCOME": "Welcome to Kreate App"
+  },
+  "TABS": {
+    "HOME": "Home",
+    "SEARCH": "Search",
+    "PROFILE": "Profile"
+  },
+  "SETTINGS": {
+    "TITLE": "Settings",
+    "LANGUAGE": "Language",
+    "THEME": "Theme",
+    "DARK_MODE": "Dark Mode",
+    "LIGHT_MODE": "Light Mode",
+    "NOTIFICATIONS": "Notifications"
+  },
+  "AUTH": {
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "LOGOUT": "Logout",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "FORGOT_PASSWORD": "Forgot Password?"
+  },
+  "COMMON": {
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "NEXT": "Next",
+    "BACK": "Back",
+    "DONE": "Done",
+    "LOADING": "Loading..."
+  }
+}

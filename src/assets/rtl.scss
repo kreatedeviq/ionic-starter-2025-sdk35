@@ -1,0 +1,109 @@
+/*
+ * RTL Support Styles
+ * These styles help with RTL (Right-to-Left) languages like Arabic and Kurdish
+ */
+
+/* Common RTL adjustments */
+.rtl {
+  /* Fix padding and margins for RTL */
+  .ion-padding-start {
+    padding-right: var(--ion-padding, 16px) !important;
+    padding-left: 0 !important;
+  }
+  
+  .ion-padding-end {
+    padding-left: var(--ion-padding, 16px) !important;
+    padding-right: 0 !important;
+  }
+  
+  .ion-margin-start {
+    margin-right: var(--ion-margin, 16px) !important;
+    margin-left: 0 !important;
+  }
+  
+  .ion-margin-end {
+    margin-left: var(--ion-margin, 16px) !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Fix text alignment for RTL */
+  .ion-text-start {
+    text-align: right !important;
+  }
+  
+  .ion-text-end {
+    text-align: left !important;
+  }
+  
+  /* Fix icons in buttons and items */
+  ion-button ion-icon[slot="start"],
+  ion-item ion-icon[slot="start"] {
+    margin-right: 0;
+    margin-left: 0.3em;
+  }
+  
+  ion-button ion-icon[slot="end"],
+  ion-item ion-icon[slot="end"] {
+    margin-left: 0;
+    margin-right: 0.3em;
+  }
+  
+  /* RTL support for ion-back-button */
+  ion-back-button {
+    transform: scaleX(-1);
+  }
+  
+  /* RTL support for ion-searchbar */
+  ion-searchbar .searchbar-input {
+    direction: rtl;
+  }
+  
+  /* RTL support for ion-item */
+  ion-item {
+    --inner-padding-end: var(--ion-padding, 16px);
+    --inner-padding-start: 0;
+  }
+  
+  /* Lists with avatars/thumbnails */
+  ion-avatar[slot="start"],
+  ion-thumbnail[slot="start"] {
+    margin-right: 0;
+    margin-left: 1em;
+  }
+  
+  /* Menu and slide gestures */
+  ion-menu.menu-enabled-true.menu-side-start {
+    transform: translateX(100%);
+  }
+  
+  ion-menu.menu-enabled-true.menu-side-end {
+    transform: translateX(-100%);
+  }
+}
+
+/* Font adjustments for Arabic */
+html[lang="ar"] {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  
+  ion-title, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+  }
+}
+
+/* Font adjustments for Kurdish */
+html[lang="ku"] {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  
+  ion-title, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+  }
+}
+
+/* Fallback for missing fonts */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  src: local('Droid Arabic Kufi'), local('DroidArabicKufi');
+  /* Fallback to system fonts if Droid Arabic Kufi is not available */
+  font-weight: normal;
+  font-style: normal;
+}
